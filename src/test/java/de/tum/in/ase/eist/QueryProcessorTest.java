@@ -36,4 +36,10 @@ class QueryProcessorTest {
 		assertEquals("15", actual);
 	}
 
+	@Test
+	void testLargest() {
+		String actual = queryProcessor.process("12313123: which of the following numbers is the largest: 11, 22, 33, 44, 11");
+		assertEquals("44", actual);
+	}
+
 }
