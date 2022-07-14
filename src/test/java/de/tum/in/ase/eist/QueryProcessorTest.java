@@ -30,4 +30,10 @@ class QueryProcessorTest {
 		}
 	}
 
+	@Test
+	void testPlus() {
+		String actual = queryProcessor.process("12313123: what is 13 plus 2");
+		assertEquals("15", actual);
+	}
+
 }
